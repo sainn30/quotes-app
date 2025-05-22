@@ -23,7 +23,7 @@
             </div>
         @endforelse
 
-        <div class="mt-6">
+        <div class="mt-6 pb-6">
             {{ $quotes->links() }}
         </div>
     </div>
