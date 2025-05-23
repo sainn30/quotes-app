@@ -19,6 +19,6 @@ class AdminQuoteController extends Controller
         $quote = Quote::findOrFail($id);
         $quote->delete();
 
-        return back()->with('success', 'Quote berhasil dihapus oleh admin.');
+        return back()->with('success', 'Quote was successfully deleted by the admin.');
     }
 }

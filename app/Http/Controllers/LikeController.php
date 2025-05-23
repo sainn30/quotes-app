@@ -18,7 +18,7 @@ class LikeController extends Controller
             'quote_id' => $quote->id,
         ]);
 
-        return back()->with('success', 'Quote disukai.');
+        return back()->with('success', 'Quote liked.');
     }
 
     public function unlike($id)
@@ -29,6 +29,6 @@ class LikeController extends Controller
             $like->delete();
         }
 
-        return back()->with('success', 'Like dihapus.');
+        return back()->with('success', 'Quote unliked.');
     }
 }
