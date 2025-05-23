@@ -18,7 +18,7 @@
                 <x-input-label for="email" :value="__('Email')" class="text-[#0f2c59]" />
                 <x-text-input
                     id="email"
-                    class="block mt-1 w-full border-gray-300 focus:border-[#f4b400] focus:ring-[#f4b400]"
+                    class="block mt-1 w-full border-gray-300 focus:border-yellow-400 focus:ring-yellow-400"
                     type="email"
                     name="email"
                     :value="old('email')"
@@ -35,7 +35,7 @@
                 <x-input-label for="password" :value="__('Password')" class="text-[#0f2c59]" />
                 <x-text-input
                     id="password"
-                    class="block mt-1 w-full border-gray-300 focus:border-[#f4b400] focus:ring-[#f4b400]"
+                    class="block mt-1 w-full border-gray-300 focus:border-yellow-400 focus:ring-yellow-400"
                     type="password"
                     name="password"
                     placeholder="********"
@@ -61,7 +61,7 @@
 
             <!-- Login Button -->
             <div>
-                <x-primary-button class="w-full justify-center bg-[#1a73e8] hover:bg-[#1765cc] text-white py-2 text-sm rounded-md">
+                <x-primary-button class="w-full justify-center bg-blue-600 hover:bg-blue-700 text-white py-2 text-sm rounded-md transition">
                     🔑 Login
                 </x-primary-button>
             </div>
@@ -69,7 +69,7 @@
             <!-- Register Link -->
             <div class="text-center text-sm text-gray-600 mt-4">
                 Don't have an account?
-                <a href="{{ route('register') }}" class="text-yellow-600 font-semibold hover:underline">Sign up now</a>
+                <a href="{{ route('register') }}" class="text-yellow-500 font-semibold hover:underline">Sign up now</a>
             </div>
         </form>
     </div>

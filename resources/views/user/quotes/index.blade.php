@@ -27,8 +27,31 @@
             </div>
         @endforeach
 
-        <div class="mt-6">
+        <div class="mt-6 pb-6">
             {{ $quotes->links() }}
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        @if (session('success')) 
+          Swal.fire({
+            icon: "success",
+            title: "Success!",
+            text: "{{ session('success') }}",
+            showConfirmButton: false,
+            timer: 2000
+          });
+        @elseif(session('error'))
+          Swal.fire({
+            icon: "error",
+            title: "Error!",
+            text: "{{ session('error') }}",
+            showConfirmButton: false,
+            timer: 2000
+          });
+        @endif
+      </script>
+
 </x-app-layout>

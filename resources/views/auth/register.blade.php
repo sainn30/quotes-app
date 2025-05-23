@@ -15,7 +15,7 @@
                 <x-input-label for="name" :value="__('Name')" class="text-[#0f2c59]" />
                 <x-text-input
                     id="name"
-                    class="block mt-1 w-full border-gray-300 focus:border-[#f4b400] focus:ring-[#f4b400]"
+                    class="block mt-1 w-full border-gray-300 focus:border-yellow-400 focus:ring-yellow-400"
                     type="text"
                     name="name"
                     :value="old('name')"
@@ -32,7 +32,7 @@
                 <x-input-label for="email" :value="__('Email')" class="text-[#0f2c59]" />
                 <x-text-input
                     id="email"
-                    class="block mt-1 w-full border-gray-300 focus:border-[#f4b400] focus:ring-[#f4b400]"
+                    class="block mt-1 w-full border-gray-300 focus:border-yellow-400 focus:ring-yellow-400"
                     type="email"
                     name="email"
                     :value="old('email')"
@@ -48,7 +48,7 @@
                 <x-input-label for="password" :value="__('Password')" class="text-[#0f2c59]" />
                 <x-text-input
                     id="password"
-                    class="block mt-1 w-full border-gray-300 focus:border-[#f4b400] focus:ring-[#f4b400]"
+                    class="block mt-1 w-full border-gray-300 focus:border-yellow-400 focus:ring-yellow-400"
                     type="password"
                     name="password"
                     placeholder="********"
@@ -63,7 +63,7 @@
                 <x-input-label for="password_confirmation" :value="__('Confirm Password')" class="text-[#0f2c59]" />
                 <x-text-input
                     id="password_confirmation"
-                    class="block mt-1 w-full border-gray-300 focus:border-[#f4b400] focus:ring-[#f4b400]"
+                    class="block mt-1 w-full border-gray-300 focus:border-yellow-400 focus:ring-yellow-400"
                     type="password"
                     name="password_confirmation"
                     placeholder="********"
@@ -75,7 +75,7 @@
 
             <!-- Register Button -->
             <div>
-                <x-primary-button class="w-full justify-center bg-[#1a73e8] hover:bg-[#1765cc] text-white py-2 text-lg rounded-md">
+                <x-primary-button class="w-full justify-center bg-blue-600 hover:bg-blue-700 text-white py-2 text-lg rounded-md">
                     ✍️ Register
                 </x-primary-button>
             </div>
@@ -83,7 +83,7 @@
             <!-- Link ke Login -->
             <div class="text-center text-sm text-gray-600 mt-4">
                 Already have an account?
-                <a href="{{ route('login') }}" class="text-yellow-600 font-semibold hover:underline">Log in now</a>
+                <a href="{{ route('login') }}" class="text-yellow-500 font-semibold hover:underline">Log in now</a>
             </div>
         </form>
     </div>

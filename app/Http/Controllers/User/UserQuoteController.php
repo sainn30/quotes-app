@@ -34,7 +34,7 @@ class UserQuoteController extends Controller
             'content' => $request->content,
         ]);
 
-        return redirect()->route('quotes.index')->with('success', 'Quote berhasil ditambahkan!');
+        return redirect()->route('quotes.index')->with('success', 'Quote added successfully!');
     }
 
     public function edit($id)
@@ -60,7 +60,7 @@ public function update(Request $request, $id)
         'content' => $request->content,
     ]);
 
-    return redirect()->route('quotes.mine')->with('success', 'Quote berhasil diperbarui.');
+    return redirect()->route('quotes.mine')->with('success', 'Quote updated successfully.');
 }
 
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Quotes App</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="{{ asset('storage/images/logo-quotesapp.png') }}">
     <!-- Kalau kamu pakai Tailwind CSS, pastikan sudah di-compile di app.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
